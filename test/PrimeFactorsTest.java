@@ -1,0 +1,17 @@
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import static org.junit.Assert.*;
+
+public class PrimeFactorsTest {
+
+  @Test
+  public void getListOfPrimeFactorsWhenGivenANumber(){
+    PrimeFactors primeFactors = new PrimeFactors();
+    List<Integer> expectedPrimeFactors = new ArrayList<>();
+    Assert.assertEquals(expectedPrimeFactors, primeFactors.generate(1));
+  }
+}
